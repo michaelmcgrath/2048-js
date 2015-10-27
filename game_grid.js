@@ -1,22 +1,21 @@
+var getCells = function(){
+    var cellsArray = []
 
-function grid(el) {
-    var container = document.createElement("div");
-    container.id = "main";
-    container.className = "container";
+    $(".container").children().each(function(i){
+      $('#'+i).children().each(function(c){
+        cellsArray.push(c)
+        console.log($('#'+c))
+      })
+    })
+  }();
 
-    for (i=0; i<4; i+=1) {
-        var row = document.createElement("div");
-        row.className = "row";
-        row.id = "row" + i;
+var boxes = []
 
-        for (k=0; k<4; k+=1) {
-            var box = document.createElement("div");
-            box.className = "box";
-            row.appendChild(box);
-        };
-        container.appendChild(row);
-    };
-    el.appendChild(container);
-};
+$('div.box').each(function(box){
+boxes.push($(box).id)
+});
+
+
+$("#box00").append("hello");
 
 
