@@ -1,23 +1,25 @@
+//Makes the board
 function grid(el) {
-    var container = document.createElement("div");
-    container.id = "main";
-    container.className = "container";
+  var container = document.createElement("div");
+  container.id = "main";
+  container.className = "container";
 
-    for (i=0; i<4; i+=1) {
-        var row = document.createElement("div");
-        row.className = "row";
-        row.id = "row" + i;
+  for (i=0; i<4; i+=1) {
+    var row = document.createElement("div");
+    row.className = "row";
+    row.id = "row" + i;
 
-        for (k=0; k<4; k+=1) {
-            var box = document.createElement("div");
-            box.className = "box";
-            box.id = "box" + i + k;
-            row.appendChild(box);
-        };
-        container.appendChild(row);
+    for (k=0; k<4; k+=1) {
+      var box = document.createElement("div");
+      box.className = "box";
+      box.id = ""+i+ k;
+      row.appendChild(box);
     };
-    el.appendChild(container);
+    container.appendChild(row);
+  };
+  el.appendChild(container);
 };
+
 
 
 

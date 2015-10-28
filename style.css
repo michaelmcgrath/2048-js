@@ -14,14 +14,19 @@ html, body{
     outline: 1px solid;
     float:left;
     margin:1px;
+    background-color: #FF9966;
 }
-
 .box{
     width:25%;
     height:100%;
     outline: 1px solid;
     float:left;
-
+    text-align: center;
 }
-
+p{
+  font-size: 200%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
