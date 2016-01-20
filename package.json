@@ -1,0 +1,29 @@
+{
+  "name": "2048-js",
+  "version": "1.0.0",
+  "description": "Game of 2048",
+  "main": "index.js",
+  "scripts": {
+    "serve": "budo ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelmcgrath/2048-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelmcgrath/2048-js/issues"
+  },
+  "homepage": "https://github.com/michaelmcgrath/2048-js",
+  "dependencies": {
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  },
+  "devDependencies": {
+    "budo": "^8.0.0",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
