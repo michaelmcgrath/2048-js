@@ -4,7 +4,7 @@
   "description": "Game of 2048",
   "main": "index.js",
   "scripts": {
-    "serve": "budo ",
+    "serve": "budo index.js --live -- -t [babelify --presets es2015 --presets react --presets stage-0] -d | garnish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
