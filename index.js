@@ -1,19 +1,15 @@
-
 function initBoard() {
   var board = Array(...Array(4)).map(() => {
     return Array(4).fill(0)
   })
   var cell1 = randCell(board)
-  // cell1 = [0, 3]
-  // cell1[0] === 0, cell1[1] === 3
   board[cell1[0]][cell1[1]] = 2
-  // board[0][3] = 2
   var cell2 = randCell(board)
   board[cell2[0]][cell2[1]] = 2
   return board
 }
 
-var randCell = function(board) {
+var randCellfunction(board) {
   var emptyCells = []
   board.forEach(function(row, i) {
     row.forEach(function(cell, j){
@@ -25,17 +21,55 @@ var randCell = function(board) {
   return emptyCells[Math.floor(Math.random() * emptyCells.length)]
 }
 
+var currentBoard = initBoard()
 
+function updateBoard(){
+  var cell1 = randCell(currentBoard)
+  currentBoard[cell1[0]][cell1[1]] = 2
+  return currentBoard
+}
 
+function move(direction) {
 
-//   selectedCell = board[Math.floor(Math.random() * board.length)]
-//   for (var i = 0; i < 15; i++){
-//     if(selectedCell.length < 1){
-//       selectedCell.push(2)
-//       i+15
-//     }
-//     else {
-//       selectedCell
-//     }
-//   }
-// }
+}
+
+function combine(num1, num2){
+  num1 + num2
+}
+
+function canCombine(num1, num2){
+  if (num1 == num2){
+    combine(num1, num2)
+  }
+  else{
+    return
+  }
+}
+
+function nextNeighbourToMy(direction, myPosition){
+  number, neighbourPosition
+}
+
+function isNeighbourToMy(direction, myPosition){
+  //return boolean
+}
+
+function isAtBoundary(direction){
+  //return boolean
+}
+
+function isEmptyBox(location){
+  //return boolean
+}
+
+function tryCombineLine(line){
+  //return newLine
+  //if (line === newLine){
+  //  done
+  //}
+}
+
+for (var i =0; i < 14; i++){
+  console.log(updateBoard())
+}
+
